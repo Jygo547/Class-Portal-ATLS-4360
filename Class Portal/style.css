@@ -181,3 +181,46 @@ nav ul {
 #a-body p{
     line-height: 15px;
 }
+
+/* Process Blogs Page */
+
+#b-body {
+    width: 100%;
+    padding: 20px 40px;
+    margin: 0;
+    text-align: left;
+    margin-left: 16vw;
+}
+
+.b-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.blog-item {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    font-size: 1.4rem;
+    line-height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 15%);
+    padding: 20px;
+}
+
+.blog-image {
+    width: 50%;
+    height: 50%;
+}
+
+.desc-2 {
+    text-indent: 30px;
+    line-height: 10px;
+    font-size: 1rem;
+}
+
+.desc-2 * {
+    padding: 5px 0;
+}
