@@ -88,8 +88,11 @@ nav ul {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.stretched {
+    grid-column: span 3;
+}
+
 .card-element {
-    max-width: 500px;
     padding: 30px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -120,8 +123,7 @@ nav ul {
     border: solid 2px maroon;
 }
 
-/* Keeping for Reference
 p {
     font-size: 1.2rem;
-    line-height: 40px;
-} */
+    line-height: 30px;
+}
