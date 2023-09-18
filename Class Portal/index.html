@@ -5,21 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Portal</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://kit.fontawesome.com/1113d0a670.js" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/1113d0a670.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
-    
     <div id="main">
-        <nav id="navbar">    
-            <ul>
+        <nav id="navbar"> 
+            <a class="logo" href="index.html">Class Portal</a>
+            <ul id="navbar-links">
+                <div class="menu-bar">
+                    <h2>Menu</h2>
+                    <button id="close-nav" class="bi-menu"><img src="/Bootstrap Icons/x-square-fill.svg">Close</button>
+                </div>
                 <!-- Create a floating nav bar and add another CU Info element also make sure to make it responsive-->
-                <a id="logo" href="index.html"><li>Class Portal</li></a>
+                
                 <a href="assignments.html" class="nav-link-1"><li>Assignments</li></a>
                 <a href="projects.html" class="nav-link-1"><li>Projects</li></a>
                 <a href="blogs.html" class="nav-link-1"><li>Process Blogs</li></a>
-                <a href="resources.html" class="nav-link-1"><li >Resources</li></a>
+                <a href="resources.html" class="nav-link-1"><li>Resources</li></a>
                 <a href="profile.html" class="nav-link-1"> <li>Profile</li></a>
             </ul>
+            <button id="mobile-menu" class="icon bi-menu"><img class="menu-icon" src="/Bootstrap Icons/three-dots.svg"></button>  
         </nav>
             <!-- Create a js function to increase number of the input values automatically when adding more assingments, etc. -->
         <div id="body">

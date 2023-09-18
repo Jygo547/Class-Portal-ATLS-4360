@@ -10,18 +10,20 @@
 <body>
     
     <div id="main">
-        <nav id="navbar">    
-            <ul>
-                <a id="logo" href="index.html"><li>Class Portal</li></a>
+        <nav id="navbar"> 
+            <a class="logo" href="index.html">Class Portal</a>
+            <ul id="navbar-links">
+                <!-- Create a floating nav bar and add another CU Info element also make sure to make it responsive-->
                 <a href="assignments.html" class="nav-link-1"><li>Assignments</li></a>
                 <a href="projects.html" class="nav-link-1"><li>Projects</li></a>
                 <a href="blogs.html" class="nav-link-1"><li>Process Blogs</li></a>
-                <a href="resources.html" class="nav-link-1"><li >Resources</li></a>
+                <a href="resources.html" class="nav-link-1"><li>Resources</li></a>
                 <a href="profile.html" class="nav-link-1"> <li>Profile</li></a>
             </ul>
+            <button id="mobile-menu">Menu</button>  
         </nav>
             <!-- Create a js function to increase number of the input values automatically when adding more assingments, etc. -->
-        <div id="a-body">
+        <div id="a-body" class="a-body">
             <h1 id="class-title">Assignments</h1>
             <!-- Make card elements for each point here and change them to div tags -->
             <div id="assignments" class="a-layout">

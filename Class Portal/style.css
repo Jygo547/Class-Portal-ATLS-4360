@@ -12,14 +12,18 @@ html, body {
     color: rgb(32, 32, 32);
 }
 
-#logo {
+#mobile-menu {
+    display: none;
+}
+
+.logo {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     text-decoration: none;
     box-sizing: border-box;
-    width: 100%;
     padding: 20px;
+    width: 100%;
     margin: 0;
     color: white;
     background-color: var(--primary-color);
@@ -39,7 +43,7 @@ html, body {
     position: fixed;
 }
 
-nav ul {
+#navbar-links {
     display: flex;
     flex-flow: column;
     margin: 0;
@@ -125,6 +129,27 @@ nav ul {
     margin-top: 20px;
 }
 
+.bi-menu {
+    border: 0;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#close-nav {
+    border: 0;
+    background-color: white;
+    display: none;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    padding: 0 30px;
+    border-bottom: solid 1px var(--primary-color);
+}
+
 .icon {
     padding: 10px;
 }
@@ -154,34 +179,10 @@ nav ul {
     line-height: 30px;
 }
 
-@media (max-width: 1580px) {
-
-    #logo {
-        font-size: 1.5rem;
-    }
-
-    .nav-link-1 {
-        font-size:  1.2rem;
-    }
-
-    .b-layout {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-}
-
-@media (min-width: 1581px) {
-    .b-layout {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-}
 
 /* Assignments Page */
 
-#a-body {
+.a-body {
     width: 100%;
     padding: 20px 40px;
     margin: 0;
@@ -222,7 +223,7 @@ nav ul {
     padding-bottom: 20px;
 }
 
-#a-body p{
+.a-body p{
     line-height: 15px;
 }
 
@@ -257,4 +258,142 @@ nav ul {
     padding: 0 30px;
     line-height: 10px;
     font-size: 1rem;
+}
+
+/* Media Tags */
+
+@media (max-width: 1580px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-link-1 {
+        font-size:  1.2rem;
+    }
+
+    .b-layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1581px) {
+    .b-layout {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    
+    #main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    #navbar {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin: 0;
+    box-shadow: 5px 0 8px var(--shadow-color);
+    background-color: var(--primary-color);
+    }
+
+    #navbar-links {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    
+    .nav-link-1 {
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        text-align: center;
+        margin: auto 0;
+        padding: 0;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 0;
+    width: 20%;
+    margin: 0;
+    color: white;
+    box-shadow: 5px 0 8px var(--shadow-color);
+    }
+
+    #body, .a-body, #b-body {
+        width: 90vw;
+        margin: 100px auto 0 auto;
+    }
+}
+
+/* Unable to make it proper size as I wanted in the mobile view */
+
+@media (max-width: 1040px) {
+    #navbar-links {
+        box-sizing: margin-box;
+        display: none;
+        flex-direction: column;
+        align-items: end;
+        width: auto;
+        height: auto;
+        padding: 20px 0;
+        background-color: white;
+        border-left: solid 5px white;
+        margin: auto -50px 0 0;
+        box-shadow: -5px 5px 8px var(--shadow-color);
+    }
+
+    .nav-link-1 {
+        margin: 0;
+        padding: 20px 30px;
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        text-align: left;
+    }
+
+    #mobile-menu {
+        display: block;
+    }
+
+    #navbar {
+       justify-content: space-between;
+       margin: 0 auto;
+       padding: 0 50px;
+       z-index: 1000;
+       
+    }
+    
+    .logo {
+        display: inline-block;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    #close-nav {
+        align-items: center;
+        padding-left: 20px;
+        color: var(--primary-color);
+        font-size: 1.3rem;
+        text-indent: 10px;
+    }
 }
