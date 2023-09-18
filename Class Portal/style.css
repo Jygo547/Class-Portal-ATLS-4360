@@ -1,3 +1,11 @@
+/* 5:23PM - Things to do:
+1. Change Menu button color
+2. Make nav menu better in mobile view
+3. Change title headers and add logos to them
+4. Host it on vercel
+5. Solve the error mentioned in script.js
+6. Change the process blog icons to bootstrap instead of fontawesome*/
+
 
 :root {
     --primary-color: #7D83FF;
@@ -496,7 +504,8 @@ html, body {
         align-items: center;
     }
 
-    #body {
+    #body, .a-body, #b-body {
         margin: 70px auto 0 auto;
+        padding: 10px;
     }
 }
