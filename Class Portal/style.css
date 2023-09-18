@@ -302,6 +302,14 @@ html, body {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
+
+    #mobile-menu {
+        display: none;
+    
+    }
+    #navbar-links {
+        display: flex;
+    }
 }
 
 @media (min-width: 1581px) {
@@ -326,7 +334,7 @@ html, body {
     height: 10vh;
     margin: 0;
     box-shadow: 5px 0 8px var(--shadow-color);
-    
+    background-color: white;
     }
 
     #navbar-links {
@@ -371,8 +379,6 @@ html, body {
     }
 }
 
-/* Unable to make it proper size as I wanted in the mobile view */
-
 @media (max-width: 1040px) {
     #navbar-links {
         box-sizing: margin-box;
@@ -402,7 +408,7 @@ html, body {
     }
 
     #mobile-menu {
-        display: block;
+        display: flex;
     }
 
     #navbar {
@@ -410,7 +416,7 @@ html, body {
        margin: 0 auto;
        padding: 0 50px;
        z-index: 1000;
-       
+       background-color: white;
     }
     
     .logo {
@@ -424,5 +430,73 @@ html, body {
         color: var(--primary-color);
         font-size: 1.3rem;
         text-indent: 10px;
+    }
+
+    .card-layout, .b-layout, .a-layout {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stretched {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        line-height: normal;
+        width: auto;
+    }
+
+    #body p {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    html h1 {
+        font-size: 1.4rem;
+    }
+
+    html h2, h3 {
+        font-size: 1.2rem;
+    }
+
+    #navbar {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+
+    .logo {
+        width: auto;
+        padding: 20px;
+    }
+
+    #body {
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .card-layout, .b-layout, .a-layout {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .stretched {
+        grid-column: span 1;
+    }
+
+    #navbar{
+        height: 7vh;
+    }
+
+    #mobile-menu {
+        height: 50%;
+        align-items: center;
+    }
+
+    #body {
+        margin: 70px auto 0 auto;
     }
 }

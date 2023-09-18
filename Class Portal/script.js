@@ -7,7 +7,7 @@ console.log(navbar);
 
 menuButton.addEventListener('click', () => {
     navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
-    menuButton.style.display = menuButton.style.display === 'none' ? 'block' : 'none';
+    menuButton.style.display = menuButton.style.display === 'none' ? 'flex' : 'none';
     close.style.display = close.style.display === 'flex' ? 'none' : 'flex';
     menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
 });
@@ -18,3 +18,5 @@ close.addEventListener('click', () => {
     menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
     close.style.display = close.style.display === 'none' ? 'flex' : 'none';
 })
+
+// Error Note: The navbar toggle button works fine when the screen size is reduced, but after interacting with the navbar and increasing the size, the navbar doesn't show normally and the toggle button remains.
