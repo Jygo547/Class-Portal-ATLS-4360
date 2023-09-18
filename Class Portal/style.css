@@ -91,7 +91,7 @@ nav ul {
 
 .card-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -154,7 +154,7 @@ nav ul {
     line-height: 30px;
 }
 
-@media (max-width: 1420px) {
+@media (max-width: 1580px) {
 
     #logo {
         font-size: 1.5rem;
@@ -162,6 +162,20 @@ nav ul {
 
     .nav-link-1 {
         font-size:  1.2rem;
+    }
+
+    .b-layout {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1581px) {
+    .b-layout {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
 }
 
@@ -195,7 +209,7 @@ nav ul {
 
 .a-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
@@ -220,12 +234,6 @@ nav ul {
     margin: 0;
     text-align: left;
     margin-left: 16vw;
-}
-
-.b-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
 }
 
 .blog-item {
