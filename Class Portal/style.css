@@ -1,6 +1,12 @@
+
+:root {
+    --primary-color: #7D83FF;
+    --shadow-color: #7d83ff50;
+}
+
 html, body {
     font-size: 16px;
-    font-family: 'Nunito', 'Open Sans', 'Poppins', 'Montserrat';
+    font-family: 'Nunito';
     margin: 0;
     padding: 0;
     color: rgb(32, 32, 32);
@@ -16,8 +22,8 @@ html, body {
     padding: 20px;
     margin: 0;
     color: white;
-    background-color: #7D83FF;
-    box-shadow: 5px 0 8px #7d83ff50
+    background-color: var(--primary-color);
+    box-shadow: 5px 0 8px var(--shadow-color);
 }
 
 
@@ -29,7 +35,7 @@ html, body {
     width: 16vw;
     height: 100vh;
     margin: 0;
-    box-shadow: 5px 0 8px #7d83ff50;
+    box-shadow: 5px 0 8px var(--shadow-color);
     position: fixed;
 }
 
@@ -49,7 +55,7 @@ nav ul {
     line-height: 20px;
 }
 
-.nav-link {
+.nav-link-1 {
     box-sizing: border-box;
     font-size: 1.3rem;
     width: 100%;
@@ -78,7 +84,7 @@ nav ul {
 #class-title {
     padding: 20px 0;
     border-radius: 10px;
-    background-color: #7D83FF;
+    background-color: var(--primary-color);
     color: white;
     text-indent: 20px;
 }
@@ -100,6 +106,27 @@ nav ul {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 15%);
+}
+
+.bi-github {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    background-color: var(--primary-color);
+    border: 0;
+    text-indent: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.icon {
+    padding: 10px;
 }
 
 .border-blue {
@@ -133,7 +160,7 @@ nav ul {
         font-size: 1.5rem;
     }
 
-    .nav-link {
+    .nav-link-1 {
         font-size:  1.2rem;
     }
 }
@@ -149,12 +176,15 @@ nav ul {
 }
 
 .desc-1 {
-    text-indent: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 30px;
     line-height: 10px;
     font-size: 1rem;
 }
 
-.desc-1 * {
+.desc-1 h2, p {
     padding: 5px 0;
 }
 
@@ -194,7 +224,7 @@ nav ul {
 
 .b-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
 }
 
@@ -207,7 +237,7 @@ nav ul {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 15%);
-    padding: 20px;
+    padding: 20px 40px;
 }
 
 .blog-image {
@@ -216,11 +246,7 @@ nav ul {
 }
 
 .desc-2 {
-    text-indent: 30px;
+    padding: 0 30px;
     line-height: 10px;
     font-size: 1rem;
-}
-
-.desc-2 * {
-    padding: 5px 0;
 }
