@@ -14,6 +14,7 @@ html, body {
 
 #mobile-menu {
     display: none;
+
 }
 
 .logo {
@@ -62,7 +63,7 @@ html, body {
 .nav-link-1 {
     box-sizing: border-box;
     font-size: 1.3rem;
-    width: 100%;
+    width: 90%;
     position: relative;
     padding: 30px 0;
     padding-left: 10%;
@@ -70,6 +71,13 @@ html, body {
     font-weight: bold;
     color: rgb(32, 32, 32);
     text-decoration: none;
+}
+
+.navlink-flex {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 100%;
 }
 
 #main {
@@ -133,6 +141,7 @@ html, body {
     border: 0;
     font-weight: bold;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 #close-nav {
@@ -141,13 +150,29 @@ html, body {
     display: none;
 }
 
-.menu-bar {
+#menu {
+    display: none;
+}
+
+#menu-bar {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     color: var(--primary-color);
     font-size: 1.5rem;
-    padding: 0 30px;
-    border-bottom: solid 1px var(--primary-color);
+    padding: 0;
+}
+
+#menu-bar h2 {
+    margin: 10px 0;
+}
+
+.line {
+    border: solid 1px var(--primary-color);
+}
+
+.nav-icon {
+    padding-right: 20px;
 }
 
 .icon {
@@ -287,7 +312,7 @@ html, body {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
     
     #main {
         display: flex;
@@ -301,7 +326,7 @@ html, body {
     height: 10vh;
     margin: 0;
     box-shadow: 5px 0 8px var(--shadow-color);
-    background-color: var(--primary-color);
+    
     }
 
     #navbar-links {
@@ -309,7 +334,7 @@ html, body {
         flex-flow: row;
         justify-content: center;
         margin: 0;
-        padding: 0;
+        padding: 0 0 0 30px;
         list-style: none;
     }
 
@@ -321,7 +346,6 @@ html, body {
         margin: auto 0;
         padding: 0;
         font-weight: bold;
-        color: white;
         text-decoration: none;
     }
 
@@ -335,9 +359,10 @@ html, body {
     box-sizing: border-box;
     padding: 0;
     width: 20%;
+    height: 100%;
     margin: 0;
-    color: white;
     box-shadow: 5px 0 8px var(--shadow-color);
+    background-color: var(--primary-color);
     }
 
     #body, .a-body, #b-body {
@@ -353,22 +378,27 @@ html, body {
         box-sizing: margin-box;
         display: none;
         flex-direction: column;
-        align-items: end;
-        width: auto;
+        align-items: stretch;
+        
+        width: 50%;
         height: auto;
-        padding: 20px 0;
+        padding: 20px 40px;
         background-color: white;
-        border-left: solid 5px white;
         margin: auto -50px 0 0;
         box-shadow: -5px 5px 8px var(--shadow-color);
     }
 
     .nav-link-1 {
         margin: 0;
-        padding: 20px 30px;
+        padding: 20px 0;
         font-size: 1.5rem;
-        color: var(--primary-color);
         text-align: left;
+        width: auto;
+    }
+
+    .navlink-flex {
+        width: auto;
+        white-space: nowrap;
     }
 
     #mobile-menu {
@@ -384,14 +414,13 @@ html, body {
     }
     
     .logo {
-        display: inline-block;
-        width: auto;
+        
         white-space: nowrap;
     }
 
     #close-nav {
         align-items: center;
-        padding-left: 20px;
+        padding-left: 0 0 0 10%;
         color: var(--primary-color);
         font-size: 1.3rem;
         text-indent: 10px;

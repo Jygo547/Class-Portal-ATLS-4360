@@ -13,17 +13,20 @@
         <nav id="navbar"> 
             <a class="logo" href="index.html">Class Portal</a>
             <ul id="navbar-links">
-                <div class="menu-bar">
-                    <h2>Menu</h2>
-                    <button id="close-nav" class="bi-menu"><img src="/Bootstrap Icons/x-square-fill.svg">Close</button>
+                <div id="menu">
+                    <div id="menu-bar">
+                        <h2>Menu</h2>
+                        <button id="close-nav" class="bi-menu"><img src="/Bootstrap Icons/x-square-fill.svg">Close</button>
+                    </div>
+                    <hr class="line">
                 </div>
-                <!-- Create a floating nav bar and add another CU Info element also make sure to make it responsive-->
                 
-                <a href="assignments.html" class="nav-link-1"><li>Assignments</li></a>
-                <a href="projects.html" class="nav-link-1"><li>Projects</li></a>
-                <a href="blogs.html" class="nav-link-1"><li>Process Blogs</li></a>
-                <a href="resources.html" class="nav-link-1"><li>Resources</li></a>
-                <a href="profile.html" class="nav-link-1"> <li>Profile</li></a>
+                <!-- Create a floating nav bar and add another CU Info element also make sure to make it responsive-->
+                <a href="assignments.html" class="nav-link-1"><li class="navlink-flex"><img src="/Bootstrap Icons/file-earmark-code-fill.svg" class="nav-icon">Assignments</li></a>
+                <a href="projects.html" class="nav-link-1"><li class="navlink-flex"><img src="/Bootstrap Icons/folder2-open.svg" class="nav-icon">Projects</li></a>
+                <a href="blogs.html" class="nav-link-1"><li class="navlink-flex"><img src="/Bootstrap Icons/pen-fill.svg" class="nav-icon">Process Blogs</li></a>
+                <a href="resources.html" class="nav-link-1"><li class="navlink-flex"><img src="/Bootstrap Icons/link-45deg.svg" class="nav-icon">Resources</li></a>
+                <a href="profile.html" class="nav-link-1"><li class="navlink-flex"><img src="/Bootstrap Icons/person-square.svg" class="nav-icon">Profile</li></a>
             </ul>
             <button id="mobile-menu" class="icon bi-menu"><img class="menu-icon" src="/Bootstrap Icons/three-dots.svg"></button>  
         </nav>
