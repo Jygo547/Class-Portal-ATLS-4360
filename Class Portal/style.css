@@ -153,12 +153,32 @@ html, body {
     margin-top: 20px;
 }
 
+.bi-link {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    background-color: var(--primary-color);
+    border: 0;
+    text-indent: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    height: 50px;
+}
+
 .bi-menu {
     border: 0;
     font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     background-color: white;
+}
+
+button {
+    cursor: pointer;
 }
 
 #close-nav {
@@ -309,11 +329,19 @@ html, body {
 /* Resources Page */
 
 .resource-item {
-    font-size: 1.4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
     line-height: 40px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgb(0, 0, 0, 15%);
+    padding: 0 20px;
+}
+
+.resource-item h2 {
+    padding-left: 20px;
 }
 
 /* Media Tags */
