@@ -3,10 +3,6 @@ const navbar = document.getElementById("navbar-links");
 const close = document.getElementById("close-nav");
 const menu = document.getElementById("menu");
 
-
-
-console.log(navbar);
-
 menuButton.addEventListener('click', () => {
     navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
     menuButton.style.display = menuButton.style.display === 'none' ? 'flex' : 'none';
