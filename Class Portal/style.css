@@ -1,10 +1,8 @@
 /* 5:23PM - Things to do:
-1. Change Menu button color - Done
-2. Make nav menu better in mobile view - Done
-3. Change title headers and add logos to them
-4. Host it on vercel
-5. Solve the error mentioned in script.js
-6. Change the process blog icons to bootstrap instead of fontawesome*/
+1. Solve the error mentioned in script.js
+2. Create a Profile Page
+3. Fix counterUp function
+7. Write a process blog entry for this*/
 
 
 :root {
@@ -444,9 +442,9 @@ button {
         display: none;
         flex-direction: column;
         align-items: stretch;
-        
-        width: 50%;
-        height: auto;
+        justify-content: start;
+        width: 40%;
+        height: 1000vh;
         padding: 20px 40px;
         background-color: white;
         margin: auto -50px 0 0;
