@@ -238,6 +238,10 @@ button {
     border: solid 2px maroon;
 }
 
+.border-primary {
+    border: solid 2px var(--primary-color);
+}
+
 #body p {
     font-size: 1.2rem;
     line-height: 30px;
