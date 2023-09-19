@@ -3,6 +3,8 @@ const navbar = document.getElementById("navbar-links");
 const close = document.getElementById("close-nav");
 const menu = document.getElementById("menu");
 
+//Create CSS classes to revert the toggle bar and ignore the override during resizing. 
+
 menuButton.addEventListener('click', () => {
     navbar.style.display = navbar.style.display === 'flex' ? 'none' : 'flex';
     menuButton.style.display = menuButton.style.display === 'none' ? 'flex' : 'none';
