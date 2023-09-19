@@ -1,6 +1,6 @@
 Hello! I'm Jyothish Gompa, and I've created a responsive website called the 'Class Portal' using HTML, CSS, and JavaScript.
 
-**Class Portal Live:** https://class-portal-topaz.vercel.app/assignments.html
+**Class Portal Live:** https://class-portal-60f9gxfzo-jygo547.vercel.app
 
 Note: In the Website, only the process blog entries Milestone 1 and Milestone 2 are added. I will add Class Portal in Projects after I submit Milestone 2.
 
